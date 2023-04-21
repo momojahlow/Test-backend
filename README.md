@@ -36,6 +36,14 @@ MAIL_FROM_NAME="${APP_NAME}"
 Finally, run the application via `php artisan serve`. The application will be available at `http://localhost:8000` and php `artisan queue:work`  :
 
 ```
+# run the  migrations...
+php artisan migrate
+
+# run the  Seeders...
+php artisan db:seed
+
+Or use : php artisan migrate:fresh --seed
+
 # run the  server...
 npm run dev
 # Send Email by queue...
